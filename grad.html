@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+    <style>
+      body {
+  background: linear-gradient(to right, #1e5799 0%, #2ce0bf 19%, #76dd2c 40%, #dba62b 60%, #e02cbf 83%, #1e5799 100%);
+  background-size: 10000px 100%;
+  animation: bg 15s linear infinite;
+}
+
+@keyframes bg {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 10000px;
+  }
+}
+.fixed-button {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #d1e7eb;
+  color: #14889c;
+  padding: 10px 20px;
+  border: 2px solid rgb(51, 156, 204);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 10px rgba(119, 209, 59, 0.5);
+}
+
+.fixed-button:hover {
+  background-color: #09f;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(82, 190, 209, 0.8);
+}
+</style>
+<a href="waves.html" class="fixed-button">Waves ?</a>
+</html>
